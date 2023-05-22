@@ -38,7 +38,6 @@ PORT = 5010
 #      Redis: redis://:password@ip:port/db
 #      Ssdb:  ssdb://:password@ip:port
 DB_CONN = 'redis://:pwd@127.0.0.1:6379/0'
-# DB_CONN = 'redis://default:iE67MyDNe964hmyoAPiL@containers-us-west-188.railway.app:6829'
 
 # proxy table name
 TABLE_NAME = 'use_proxy'
@@ -61,7 +60,8 @@ PROXY_FETCHER = [
     "freeProxy13",
     "freeProxy14",
     "freeProxy15",
-    "freeProxy16"
+    "freeProxy16",
+    "freeProxy17"
 ]
 
 # ############# proxy validator #################

@@ -251,6 +251,19 @@ class ProxyFetcher(object):
             for proxy in proxies:
                 yield proxy
 
+    @staticmethod
+    def freeProxy17():
+        urls = [
+            'https://openproxylist.xyz/http.txt'
+        ]
+        request = WebRequest()
+        for url in urls:
+            r = request.get(url, timeout=20)
+            for proxy in r.text.split('\n'):
+                if proxy:
+                    yield proxy
+
+
 
 if __name__ == '__main__':
     p = ProxyFetcher()
