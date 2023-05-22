@@ -256,6 +256,7 @@ class ProxyFetcher(object):
         urls = [
             'https://openproxylist.xyz/http.txt',
             'http://pubproxy.com/api/proxy?limit=3&format=txt&http=true&type=https',
+            'https://www.proxy-list.download/api/v1/get?type=https',
             'https://raw.githubusercontent.com/shiftytr/proxy-list/master/proxy.txt'
         ]
         request = WebRequest()
