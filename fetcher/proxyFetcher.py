@@ -255,6 +255,7 @@ class ProxyFetcher(object):
     def freeProxy17():
         urls = [
             'https://openproxylist.xyz/http.txt',
+            'http://pubproxy.com/api/proxy?limit=3&format=txt&http=true&type=https',
             'https://raw.githubusercontent.com/shiftytr/proxy-list/master/proxy.txt'
         ]
         request = WebRequest()
