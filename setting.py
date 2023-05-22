@@ -38,6 +38,7 @@ PORT = 5010
 #      Redis: redis://:password@ip:port/db
 #      Ssdb:  ssdb://:password@ip:port
 DB_CONN = 'redis://:pwd@127.0.0.1:6379/0'
+# DB_CONN = 'redis://default:iE67MyDNe964hmyoAPiL@containers-us-west-188.railway.app:6829'
 
 # proxy table name
 TABLE_NAME = 'use_proxy'
@@ -55,7 +56,12 @@ PROXY_FETCHER = [
     "freeProxy08",
     "freeProxy09",
     "freeProxy10",
-    "freeProxy11"
+    "freeProxy11",
+    "freeProxy12",
+    "freeProxy13",
+    "freeProxy14",
+    "freeProxy15",
+    "freeProxy16"
 ]
 
 # ############# proxy validator #################
@@ -65,7 +71,7 @@ HTTP_URL = "http://httpbin.org"
 HTTPS_URL = "https://www.qq.com"
 
 # 代理验证时超时时间
-VERIFY_TIMEOUT = 10
+VERIFY_TIMEOUT = 3
 
 # 近PROXY_CHECK_COUNT次校验中允许的最大失败次数,超过则剔除代理
 MAX_FAIL_COUNT = 0
@@ -74,7 +80,7 @@ MAX_FAIL_COUNT = 0
 # MAX_FAIL_RATE = 0.1
 
 # proxyCheck时代理数量少于POOL_SIZE_MIN触发抓取
-POOL_SIZE_MIN = 2000
+POOL_SIZE_MIN = 5000
 
 # ############# proxy attributes #################
 # 是否启用代理地域属性
