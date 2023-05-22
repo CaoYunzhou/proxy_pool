@@ -254,7 +254,8 @@ class ProxyFetcher(object):
     @staticmethod
     def freeProxy17():
         urls = [
-            'https://openproxylist.xyz/http.txt'
+            'https://openproxylist.xyz/http.txt',
+            'https://raw.githubusercontent.com/shiftytr/proxy-list/master/proxy.txt'
         ]
         request = WebRequest()
         for url in urls:
