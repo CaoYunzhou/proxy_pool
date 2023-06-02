@@ -77,10 +77,10 @@ VERIFY_TIMEOUT = 3
 MAX_FAIL_COUNT = 0
 
 # 近PROXY_CHECK_COUNT次校验中允许的最大失败率,超过则剔除代理
-# MAX_FAIL_RATE = 0.1
+MAX_FAIL_RATE = 0.1
 
 # proxyCheck时代理数量少于POOL_SIZE_MIN触发抓取
-POOL_SIZE_MIN = 500
+POOL_SIZE_MIN = 2000
 
 # ############# proxy attributes #################
 # 是否启用代理地域属性
