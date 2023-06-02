@@ -115,8 +115,9 @@ class ProxyFetcher(object):
             resp_text = WebRequest().get(url).text
             for each in resp_text.split("\n"):
                 json_info = json.loads(each)
-                if json_info.get("country") == "CN":
-                    yield "%s:%s" % (json_info.get("host", ""), json_info.get("port", ""))
+                #if json_info.get("country") == "CN":
+                    #yield "%s:%s" % (json_info.get("host", ""), json_info.get("port", ""))
+                yield "%s:%s" % (json_info.get("host", ""), json_info.get("port", ""))
         except Exception as e:
             print(e)
 
